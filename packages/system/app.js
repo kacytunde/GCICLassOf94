@@ -18,7 +18,24 @@ SystemPackage.register(function(app, auth, database) {
   //We enable routing. By default the Package Object is passed to the routes
   SystemPackage.routes(app, auth, database);
 
-  SystemPackage.aggregateAsset('css', 'common.css');
+  // System Aggrgated Files
+  
+  // Lib Aggrgated Files
+  var libDir = '../lib/';
+  SystemPackage.aggregateAsset('css', libDir + 'css/style.css');
+  SystemPackage.aggregateAsset('css', libDir + 'css/bootstrap.css');
+  SystemPackage.aggregateAsset('css', libDir + 'css/bootstrap.min.css');
+  SystemPackage.aggregateAsset('css', libDir + 'css/prettyPhoto.css');
+  SystemPackage.aggregateAsset('css', libDir + 'css/font-awesome.css');
+  SystemPackage.aggregateAsset('css', libDir + 'css/bootstrap-responsive.css');
+  
+  // Javascript
+  SystemPackage.aggregateAsset('js', libDir + 'js/bootstrap.js');
+  SystemPackage.aggregateAsset('js', libDir + 'js/bootstrap.min.js');
+  SystemPackage.aggregateAsset('js', libDir + 'js/custom.js');
+  SystemPackage.aggregateAsset('js', libDir + 'js/jquery.prettyPhoto.js');
+  SystemPackage.aggregateAsset('js', libDir + 'js/jquery.js');
+  SystemPackage.aggregateAsset('js', libDir + 'js/jquery.isotope.min.js');
 
   // The middleware in config/express will run before this code
 
