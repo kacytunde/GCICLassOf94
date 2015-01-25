@@ -1,0 +1,112 @@
+        <footer id="copyright-and-credits">
+            <div class="container">
+                <div class="footer-container">
+				    <div class="row">                   
+			            <div class="span3">
+                            <div class="widget">
+                                <h3 class="footer-title">About Me</h3> 
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+                                <address>
+                                    <i class="icon-map-marker"></i> 795 Folsom Ave, Suite 600<br>
+                                    San Francisco, CA 94107<br>
+                                    <i class="icon-phone"></i> (123) 456-7890<br>
+                                </address>
+                                <address>
+                                    <strong>Full Name</strong><br>
+                                    <i class="icon-envelope"></i> <a href="mailto:first.last@gmail.com" title="">first.last@gmail.com</a>
+                                </address> 
+                            </div><!-- end .widget -->                
+                        </div><!-- end .span3 --> 
+                        <div class="span3">
+                            <div class="widget recent-post">
+                                <h3 class="footer-title">Recent Posts</h3>
+                                <ul class="adjust-style">
+                                    <li><a href="single.html" title="Aenean vulputate eleifend tellus. Aenean leo ligula!">Aenean vulputate eleifend tellus. Aenean leo ligula!</a></li>
+                                    <li><a href="single.html" title="Clara Pacta, Boni Amici">Clara Pacta, Boni Amici</a></li>
+				                    <li><a href="single.html" title="Post Style Video">Post Style Video</a></li>
+				                    <li><a href="single.html" title="Post Style Image">Post Style Image</a></li>
+				                    <li><a href="single.html" title="Post Style Gallery – show images of different heightPost Style Gallery – show images of different height">Post Style Gallery – show images of different height</a></li>
+				                </ul>
+                            </div><!-- end .widget .recent-post --> 
+                        </div><!-- end .span3 --> 
+                        <div class="span3">
+                            <div class="widget photostream">
+                                <h3 class="footer-title">Flickr Photostream</h3>
+                                <ul class="without-style">
+                                    <li><a href="" title=""><img alt="Flickr" src="img/7244190510_bde1dbd767_s.jpg"></a></li>
+                                    <li><a href="" title=""><img alt="Flickr" src="img/6795454178_24898746aa_s.jpg"></a></li>
+                                    <li><a href="" title=""><img alt="Flickr" src="img/6795452380_3ffa150da3_s.jpg"></a></li>
+                                    <li><a href="" title=""><img alt="Flickr" src="img/6486398641_0bc76c019a_s.jpg"></a></li>
+                                    <li><a href="" title=""><img alt="Flickr" src="img/6394881769_9f056df7e2_s.jpg"></a></li>
+                                    <li><a href="" title=""><img alt="Flickr" src="img/6294570586_0887c8cbd6_s.jpg"></a></li>
+                                    <li><a href="" title=""><img alt="Flickr" src="img/6294520958_b46ee4ed60_s.jpg"></a></li>
+                                    <li><a href="" title=""><img alt="Flickr" src="img/6294519460_cb6cb663d0_s.jpg"></a></li>
+                                    <li><a href="" title=""><img alt="Flickr" src="img/6271872713_561e005f95_s.jpg"></a></li>
+                                </ul>
+                            </div> <!-- end .widget .photostream -->   
+                        </div><!-- end .span3 --> 
+                        <div class="span3">
+                            <div class="widget recent-twitter">
+                                <h3 class="footer-title">Latest Tweets</h3>
+                                <ul class="adjust-style">
+                                    <li>You know you're good in <a href="">#WordPress</a> if you can use WordPress in any language.<a href="" title="view tweet on twitter"> about a day ago</a></li>
+                                    <li>Confucius: Tell me and I forget. Show me and I remember. Let me do and I understand.<a href="" title="view tweet on twitter"> about 6 days ago</a></li>
+                                </ul>
+                            </div><!-- end .widget .recent-twitter --> 
+                        </div><!-- end .span3 --> 
+                    </div><!-- end .row --> 
+                </div><!-- end .footer-container -->              
+                <div class="credits">
+                    <div class="row">                    
+                        <div class="span6">
+                            <p>Copyright © 2012 Atoom. All Rights Reserved.</p>
+                        </div><!-- end .span6 --> 
+                        <div class="span6 ">
+                            <div id="social-icons-small">
+                                <ul class="without-style">
+                                    <li><a href="" class="twitter-link" title="Follow on Twitter"><span>Twitter</span></a></li>
+                                    <li><a href="" class="facebook-link" title="Follow on Facebook"><span>Facebook</span></a></li>
+			  						<li><a href="" class="dribbble-link" title="Follow on Dribbble"><span>Dribbble</span></a></li>
+			  						<li><a href="" class="vimeo-link" title="Follow on Vimeo"><span>Vimeo</span></a></li>
+			  						<li><a href="" class="flickr-link" title="Follow on Flickr"><span>Flickr</span></a></li>
+			  						<li><a href="" class="rss-link" title="Follow the RSS feed"><span>RSS</span></a></li>
+			  						<li><a href="" class="linkedin-link" title="Follow on Linkedin"><span>Linkedin</span></a></li>
+			  						<li><a href="" class="google-link" title="Follow on Google Plus"><span>Google Plus</span></a></li>
+			  					</ul>
+                            </div><!-- end .social-icons-small --> 
+                        </div><!-- end .span6 --> 
+                    </div><!-- end .row --> 
+                </div><!-- end .credits --> 
+            </div><!-- end .container -->
+		</footer><!-- end #copyright-and-credits -->
+        
+        <script>
+            $(function() {
+                $('#myTab a:first').tab('show');
+            })
+        </script>
+        <script type="text/javascript">
+            // cache container
+            var $container = $('#portfolio-container');
+            // initialize isotope
+            $container.isotope({
+                // options...
+                filter: '*'
+            });
+
+            // filter items when filter link is clicked
+            $('#filters a').click(function() {
+                var selector = $(this).attr('data-filter');
+                $container.isotope({ filter: selector });
+                return false;
+            });
+            // update columnWidth on window resize
+            $(window).smartresize(function() {
+                $container.isotope('reLayout');
+            });
+		</script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("a[rel^='prettyPhoto']").prettyPhoto();
+            });
+        </script>
