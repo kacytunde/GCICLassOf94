@@ -1,104 +1,117 @@
-<section class="welcome container-fluid" data-ng-controller="IndexController">
-  <div class="col-md-12 first">
-    MEAN.io makes building apps simpler and faster. With this website framework, you can <a href="https://github.com/linnovate/mean/wiki/CLI#user-management">create members</a>, </br>
-    articles, or <a href="http://mean.io/#!/packages">add more features</a> with a package from the community.
-    </div>
-    <div class="col-md-12 row">
-    <div class="info col-md-6">
-      <div class="docs">
-        <div class="welcome-sprite"></div>
-        <h3>Browse the  Documentation</h3>
-        <p class="docs-desc">
-        Before you jump in it's important to read the documentation and learn about the different aspects of extending and developing MEAN.<br/>
-        Mean is based on MongoDB, Express.js, Angular.js and Node.js and even basic proficiency in these technologies will help you dive in to mean development - luckily there are plenty of <a href="http://learn.mean.io/">tutorials around</a>.
-        </p>
-        <div class="docs-link first">
-          <ul>
-            <li><a href="http://learn.mean.io/#mean-technologies">Overview</a></li>
-            <li><a href="http://learn.mean.io/#mean-packages">Packages</a></li>
-          </ul>
-        </div>
-        <div class="docs-link">
-          <ul>
-            <li><a href="http://learn.mean.io/#mean-cli">CLI</a></li>
-            <li><a href="http://learn.mean.io/#mean-mean-network">Network</a></li>
-          </ul>
-        </div>
-        <div class="docs-link">
-          <ul>
-            <li><a href=http://learn.mean.io/#mean-packages-overriding-the-default-layouts"">Overriding</a></li>
-            <li><a href="http://learn.mean.io/#mean-packages-contributing-your-package">Contribution</a></li>
-          </ul>
-        </div>
-      <span class="morelink"><a href="http://mean.io/#!/docs">All Documentation</a></span>
-      </div>
-      <div class="packages">
-        <div class="welcome-sprite"></div>
-        <h3>Browse our packages</h3>
-        <div class="package">
-          <h4><a href="http://mean.io/#!/packages/5381820ea331eb26d1e97d3a">Token</a></h4>
-          <p>"Inplace edit" any text on the site which is wrapped by the mean-token directive.</p>
-        </div>
-        <div class="package">
-          <h4><a href="http://mean.io/#!/packages/5406ea218481325770de48d2">Comments</a></h4>
-          <p>Add comments to your objects including realtime socket.io based notifications.</p>
-        </div>
-        <div class="package">
-        <h4><a href="http://mean.io/#!/packages/5403969ab6f54b9162921322">Gmap</a></h4>
-          <p>Add geo information to your objects using a google map with location autocomplete.</p>
-        </div>
-        <div class="package">
-          <h4><a href="http://mean.io/#!/packages/538180d8a331eb26d1e97d39">Mean-admin</a></h4>
-          <p>Admnister your mean application including user, theme, variable and general settings</p>
-        </div>
-        <span class="morelink"><a href="http://mean.io/#!/packages">All Packages</a></span>
-      </div>
-      <div class="community">
-        <div class="welcome-sprite"></div>
-        <h3>Join our community</h3>
-          <i class="socialsprite sprite-facebook"></i>
-          <div class="package">
-            <h4><a href="https://www.facebook.com/groups/mean.io/">Facebook group</a></h4>
-            <p>Informal support, news and just hanging out</p>
-          </div>
-            <i class="socialsprite sprite-irc"></i>
-          <div class="package">
-            <h4><a href="https://gitter.im/linnovate/mean">Gitter</a></h4>
-            <p>Support and Technical discussions</a></p>
-          </div>
-        <i class="socialsprite sprite-github"></i>
-        <div class="package">
-          <h4><a href="http://github.com/linnovate/mean">Github</a></h4>
-          <p>Issues, Support, Code discussions and PRs</p>
-        </div>
-        <i class="socialsprite sprite-stackoverflow"></i>
-        <div class="package">
-          <h4><a href="http://hangout.mean.io">Hangout</a></h4>
-          <p>Video support, shared coding and to meet the people behind mean.io</p>
-        </div>
-      </div>
-    </div>
-    <div class="featured col-md-6">
-      <div class="featured-sites">
-        <h2>Get Inspired</h2>
-        <div class="featuredpic">
-          <img ng-src="{{sites.cactus.image}}"/>
-        </div>
-        <h4>{{sites.cactus.name}} <span>by
-          <a href="{{sites.cactus.link}}">{{sites.cactus.author}}</a></span></h4>
-          <p>{{sites.cactus.text}}</p>
-        <span class="morelink"><a href="http://builtwith.mean.io">Built with MEAN</a></span>
-      </div>
-      <div class="featured-packages">
-        <h2>Featured Package</h2>
-        <div class="featuredpic">
-          <img ng-src="{{packages.gmap.image}}"/>
-        </div>
-        <h4>{{packages.gmap.name}} <span>by
-          <a href="{{sites.makeapoint.link}}">{{packages.gmap.author}}</a></span></h4>
-          <p>{{packages.gmap.text}}</p>
-        <span class="morelink"><a href="http://builtwith.mean.io">All Packages</a></span>
-      </div>
-    </div>
-  </div>
-</section>
+   
+           <div class="container" data-ng-controller="IndexController">
+            <div class="row">
+                <div class="span8">
+                    <div class="post-wrapper">
+                        <a href="img/014-930x604.jpg" rel="prettyPhoto" title="This is the description"><img src="img/014-930x604.jpg" alt="" /></a>
+                        <h3><a class="post-title" href="single.html">Aenean vulputate eleifend tellus. Aenean leo ligula!</a> <i class="icon-file"></i></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>   
+                        <p><a href="single.html" class="more-link">Read more  →</a></p>
+                        <blockquote>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                            <small>Someone famous <cite title="Source Title">Source Title</cite></small>
+                        </blockquote>
+                        <hr>
+                        <ul class="meta">
+                        <li class="post-date"><i class="icon-calendar"></i><a href="">March 28th, 2012</a></li>
+                            <li><i class="icon-user"></i><a href="" title="Posts by admin" rel="author">admin</a></li>
+                            <li><i class="icon-list"></i><a href="" title="View all posts in General News" rel="category tag">General News</a></li>
+                            <li><i class="icon-comment"></i><a href="">4 Comments</a></li>
+                        </ul> 
+                        <ul class="tags">
+                            <li class="tags-list"><i class="icon-tags"></i>  <a href="" rel="tag">news</a> <a href="" rel="tag">general</a></li>
+                        </ul>  
+                    </div><!-- end .post-wrapper -->
+
+                    <div class="pagination">
+                        <ul>
+                            <li><a href=""></i>Prev</a></li>
+                            <li class="active"><a href="">1</a></li>
+                            <li><a href="">2</a></li>
+                            <li><a href="">3</a></li>
+                            <li><a href="">4</a></li>
+                            <li><a href="">Next</i></a></li>
+                        </ul>
+                    </div><!-- end .pagination --> 
+                </div><!-- end .span8-->
+                <div class="span4">
+                    <div class="widget-container">
+                        <div class="widget">
+                            <h3 class="widget-title">Recent Comments</h3>
+                            <ul id="recentcomments" class="without-style">
+                                <li class="recentcomments">Charles Ridenhour on <a href="single.html" title="">Aenean vulputate eleifend tellus. Aenean leo ligula!</a></li>
+                                <li class="recentcomments">Sathi Mondal on <a href="single.html" title="">Link to an interesting Article</a></li>
+                                <li class="recentcomments">Admin on <a href="single.html" title="">Post Style Video</a></li>
+                                <li class="recentcomments">Dave Smith on <a href="single.html" title="">Post Style Gallery – show images of different height</a></li>
+                                <li class="recentcomments">Jenny Lane on <a href="single.html" title="">Post Style Audio</a></li>
+                            </ul>
+                        </div><!-- end .widget -->
+                        <div class="widget">
+                            <ul class="nav nav-tabs" id="myTab">
+                                <li class="active"><a href="#home" data-toggle="tab">Posts</a></li>
+                                <li><a href="#all-tags" data-toggle="tab">Tags</a></li>
+                                <li><a href="#messages" data-toggle="tab">Messages</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="home">
+                                    <div class="recent-post">
+                                        <ul class="without-style">
+                                            <li><a href="single.html" title="Aenean vulputate eleifend tellus. Aenean leo ligula!">Aenean vulputate eleifend tellus. Aenean leo ligula!</a></li>
+                                            <li><a href="single.html" title="Clara Pacta, Boni Amici">Clara Pacta, Boni Amici</a></li>
+                                    <li><a href="single.html" title="Post Style Video">Post Style Video</a></li>
+                                    <li><a href="single.html" title="Post Style Image">Post Style Image</a></li>
+                                    <li><a href="single.html" title="Post Style Gallery – show images of different heightPost Style Gallery – show images of different height">Post Style Gallery – show images of different height</a></li>
+                                </ul>
+                                    </div><!-- end .recent-post -->
+                                </div><!-- end .tab-pane -->
+                                <div class="tab-pane" id="all-tags">
+                                    <ul class="tag-list2 without-style">
+                                        <li><a href="" title="">Web design</a></li>
+                                        <li><a href="" title="">Marketplace</a></li>
+                                        <li><a href="" title="">Typography</a></li>
+                                        <li><a href="" title="">Music</a></li>
+                                        <li><a href="" title="">Themes</a></li>
+                                    </ul>
+                                </div><!-- end .tab-pane -->
+                                <div class="tab-pane" id="messages">
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                                </div><!-- end .tab-pane -->
+                            </div><!-- end .tab-content -->
+                        </div><!-- end .widget -->
+                        <div class="widget">
+                            <div class="recent-twitter">
+                                <h3 class="widget-title">Latest Tweets</h3>
+                                <ul class="without-style">
+                                    <li class="tweet_first tweet_odd"><span class="tweet_text">You know you're good in <a href="">#WordPress</a> if you can use WordPress in any language.</span><span class="tweet_time"><a href="" title="view tweet on twitter"> about a day ago</a></span></li>
+                                    <li class="tweet_even"><span class="tweet_text">Confucius: Tell me and I forget. Show me and I remember. Let me do and I understand.</span><span class="tweet_time"><a href="" title="view tweet on twitter"> about 6 days ago</a></span></li>
+                                </ul>
+                            </div><!-- end .recent-twitter -->
+                        </div><!-- end .widget -->
+                        <div class="widget">
+                            <h3 class="widget-title">Category list</h3>
+                            <ul class="ok-style without-style">
+                                <li><a href="" title="">Web design</a></li>
+                                <li><a href="" title="">Marketplace</a></li>
+                                <li><a href="" title="">Typography</a></li>
+                                <li><a href="" title="">Music</a></li>
+                                <li><a href="" title="">Themes</a></li>
+                            </ul>
+                        </div><!-- end .widget -->
+                        <div class="widget photostream">
+                            <h3 class="widget-title">Flickr Photostream</h3>
+                            <ul class="without-style">
+                                <li><a href="" title=""><img alt="Flickr" src="img/7244190510_bde1dbd767_s.jpg"></a></li>
+                                <li><a href="" title=""><img alt="Flickr" src="img/6795454178_24898746aa_s.jpg"></a></li>
+                                <li><a href="" title=""><img alt="Flickr" src="img/6795452380_3ffa150da3_s.jpg"></a></li>
+                                <li><a href="" title=""><img alt="Flickr" src="img/6486398641_0bc76c019a_s.jpg"></a></li>
+                                <li><a href="" title=""><img alt="Flickr" src="img/6394881769_9f056df7e2_s.jpg"></a></li>
+                                <li><a href="" title=""><img alt="Flickr" src="img/6294570586_0887c8cbd6_s.jpg"></a></li>
+                                <li><a href="" title=""><img alt="Flickr" src="img/6294520958_b46ee4ed60_s.jpg"></a></li>
+                                <li><a href="" title=""><img alt="Flickr" src="img/6294519460_cb6cb663d0_s.jpg"></a></li>
+                                <li><a href="" title=""><img alt="Flickr" src="img/6271872713_561e005f95_s.jpg"></a></li>
+                            </ul>
+                        </div><!-- end .widget -->
+                    </div><!-- end .widget-container -->
+                </div><!-- end .span4 -->
+            </div><!-- .row -->
+        </div><!-- end.container-->

@@ -1,20 +1,28 @@
-<!doctype html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="https://www.facebook.com/2008/fbml" itemscope="itemscope" itemtype="http://schema.org/Product">
+<!DOCTYPE html>
+<html lang="en">
 {% include '../includes/head.html' %}
+<body ng-cloak class="ng-cloak" ng-class="state">
 
-<body  ng-cloak class="ng-cloak" ng-class="state">
-    <div class="navbar navbar-inverse navbar-fixed-top" data-ng-include="'/system/views/header.html'" data-role="navigation"></div>
-    {% if adminEnabled %}
-    <section class="admin-menu">
-        <div data-ng-include="'/mean-admin/views/index.html'"></div>
-    </section>
-    {% endif %}
-    <section class="content">
-        <section class="container">
-            {% block content %}{% endblock %}
-        </section>
-    </section>
-    {% include '../includes/foot.html' %}
+            <div class="introduction-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="span12">
+                        <h3>This is a introduction area. Here you can place any kind of information you require. Like a quick notice about how great <abbr title="A Resposive Portfolio / Blog Template">Atoom</abbr> is, and how you can go about purchasing it.</h3>
+                    </div><!-- end .span12 --> 
+                </div><!-- end .row --> 
+            </div><!-- end .container --> 
+        </div><!-- end .introduction-wrapper --> 
+        
+         <div  data-ng-include="'/system/views/header.html'">
+         </div><!-- end navbar -->
+
+          {% block content %}{% endblock %}
+        
+        <div  data-ng-include="'/system/views/footer.html'">
+
+        </div>
+          {% include '../includes/foot.html' %}
+        
+         
 </body>
-
 </html>
